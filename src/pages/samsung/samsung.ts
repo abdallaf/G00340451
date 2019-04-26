@@ -19,6 +19,8 @@ export class SamsungPage {
   public networkProvider: string;
   public email: string;
   public comment: string;
+  public f: string;
+  public m: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -27,7 +29,7 @@ export class SamsungPage {
     console.log("SAMSUNG UNLOCKING");
     this.navCtrl.push(SubmitPage)
   }
-
+ 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SamsungPage');
   }
