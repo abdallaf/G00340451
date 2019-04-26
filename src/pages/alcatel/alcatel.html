@@ -1,0 +1,39 @@
+<!--
+  Generated template for the AlcatelPage page.
+
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>alcatel</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating>IMEI Number</ion-label>
+        <ion-input type="numeric" [(ngModel)]="imei" ></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label floating>Phone Model</ion-label>
+          <ion-input type="text" [(ngModel)]="phoneModel" ></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label floating>Network Provider</ion-label>
+            <ion-input type="text" [(ngModel)]="networkProvider" ></ion-input>
+          </ion-item>
+    
+          <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input type="text" [(ngModel)]="email" ></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating></ion-label>
+                <ion-textarea placeholder="Comment" rows="5" ></ion-textarea>
+              </ion-item>
+    
+              <button ion-button (click)="Submit()">SUBMIT</button>
+
+</ion-content>
